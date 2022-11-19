@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETAIL STORE LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="preloader">
+
+    </div>
+<!---------------------------------- nav ---------------------------------------------------------->     
+    <div class="header">
+        <nav id="navbar">
+            <div class="logo">Cognos</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fa fa-bars"></i></label>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="Visualization.html"><i class="fa fa-line-chart"></i>Visualization</a></li>
+                <li><a href="report.html"><i class="fa fa-file"></i>Report</a></li>
+                <li><a href="team.html"><i class="fa fa-user"></i>Team</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>About</a></li>
+            </ul>
+        </nav>
+    </div>    
+
+<!----------------------------------- team ----------------------------------------------------------------->
+<div class="team">
+    <h2>Team Member</h2>
+    <h2>B.Tech: Information Technology</h2>
+   <div class="main"> 
+    <div class="profile">
+        <div class="img">
+            <img src="image/d.jpg">
+        </div>
+        <div class="caption">
+            <h3>Dilip R</h3>
+            <p>Team Member</p>
+            <div class="social-link">
+                <a href="https://github.com/R-Dilip2810"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/call_me_mr.dilip?igshid=MTg0ZDhmNDA="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="img">
+            <img src="image/k.jpg">
+        </div>
+        <div class="caption">
+            <h3>Kishore V</h3>
+            <p>Team Leader</p>
+            <div class="social-link">
+                <a href="https://github.com/KISHOREDON"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/kishoredon420_?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="img">
+            <img src="image/l.jpg">
+        </div>
+        <div class="caption">
+            <h3>Logesh B</h3>
+            <p>Team Member</p>
+            <div class="social-link">
+                <a href="https://github.com/Logeshbron"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/logeshmonster777?igshid=MTg0ZDhmNDA="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="img">
+            <img src="image/h.jpg">
+        </div>
+        <div class="caption">
+            <h3>Harish Ragavendhar MJ</h3>
+            <p>Team Member</p>
+            <div class="social-link">
+                <a href="https://github.com/harishuchiha"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/i_am_kal_e_l?igshid=MTg0ZDhmNDA="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+   </div> 
+</div>
+
+<!----------------------------------- Js ----------------------------------------------------------------->
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
+
+</body>
+</html>

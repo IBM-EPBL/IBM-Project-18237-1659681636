@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETAIL STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <div id="preloader">
+
+    </div>
+<!---------------------------------- nav ---------------------------------------------------------->     
+    <div class="header">
+        <nav id="navbar">
+            <div class="logo">Cognos</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fa fa-bars"></i></label>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="Visualization.html"><i class="fa fa-line-chart"></i>Visualization</a></li>
+                <li><a href="report.html"><i class="fa fa-file"></i>Report</a></li>
+                <li><a href="team.html"><i class="fa fa-user"></i>Team</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>About</a></li>
+            </ul>
+        </nav>
+    </div>    
+<!------------------------------------ About -------------------------------------------->
+    <div class="about">
+        <h2>About us</h2>
+        <h3>Here you can find the sales, stock, year and price of the products you handle and can Analytics their sales by..</h3>
+
+           <p> <i class="fa fa-check"></i>Dashboard which shows the overview, sales and the price<br>
+            <i class="fa fa-check"></i>Report which shows the sales result and the sales greater than 350<br>
+            <i class="fa fa-check"></i>Story shows the overview and the Sales</p>
+
+            <h3>Requirement Tools</h3>
+            <p> <i class="fa fa-check"></i>IBM CLOUD<br>
+                <i class="fa fa-check"></i>IBM COGNOS<br>
+    </div>
+<!----------------------------------- Js ----------------------------------------------------------------->
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+</html>

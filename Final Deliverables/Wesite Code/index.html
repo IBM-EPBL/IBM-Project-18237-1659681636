@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETAIL STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <div id="preloader">
+
+    </div>
+<!---------------------------------- nav ---------------------------------------------------------->     
+    <div class="header">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video/1.mp4"> 
+        </video>
+        <nav id="navbar">
+            <div class="logo">Cognos</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fa fa-bars"></i></label>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="Visualization.html"><i class="fa fa-line-chart"></i>Visualization</a></li>
+                <li><a href="report.html"><i class="fa fa-file"></i>Report</a></li>
+                <li><a href="team.html"><i class="fa fa-user"></i>Team</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>About</a></li>
+            </ul>
+        </nav>
+    </div>    
+<!------------------------------------ background video -------------------------------------------->
+<div class="back-video">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="video/1.mp4"> 
+    </video>
+        <div class="contain">
+
+            <h1>Retail Store Stock Inventory Analytics</h1>
+        <p>Retail store stock inventory analytics is a process is used to check the stock and percentage the available stock on the time.
+        <br>In practice, effective retail store stock results in lower costs and a better understanding of sales patterns.
+        <br> Retail store stock inventory analytics tools and methods give retailers more information with which to run their dataset.
+        <br> By managing inventory, retailers meet customer demand without running out of stock or carrying excess supply.</p> 
+        
+        </div>
+</div>
+<div class="center">
+</div>
+<img src="image/wave1.png" class="bottom-img">
+<!----------------------------------- Dashboard ---------------------------------------------------------------->
+<div class="dashboard">
+    <h2>Dashboard</h2>
+    <iframe src="https://us1.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FWeb&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model000001846c801dae_00000000" width="95%" height="930" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<!----------------------------------- team ----------------------------------------------------------------->
+<div class="story">
+    <h2>Story</h2>
+    <iframe src="https://us1.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FRetail%2BStore%2BStock%2BInventory%2BAnalytics%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=model000001848eff047e_00000002&amp;sceneTime=2500" width="95%" height="930" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<!----------------------------------- footer ----------------------------------------------------------------->
+<div class="footer">
+    <img src="image/wave2.png" class="footer-img">
+    <h3>Source Code</h3>
+    
+   <div class="footer-nav">
+    <ul>
+        <li><a href="report.html"><i class="fab fa-github"></i>GitHub</a></li>
+        
+    </ul>
+   </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy</p>
+    </div>
+</div>
+
+<!----------------------------------- Js ----------------------------------------------------------------->
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*------------------------------ header -----------------------------------------------*/
+#preloader{
+    background: url(video/2.gif) no-repeat center center;
+    background-size: 35px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+nav{
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 600px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 1px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: #1b1b1b;
+    background: #fff;
+}
+nav ul li a i{
+    padding-right: 10px;
+}
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click {
+    display: none;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 90vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/*---------------------------- contain ----------------------------------------------*/
+.contain{
+    height: auto;
+    width: auto;
+}
+.contain video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.contain h1{
+    padding-top: 200px;
+    color: #fff;
+    text-align: center;
+    font-size: 62px;
+    margin-left: 5%;
+}
+
+.contain p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+}
+
+
+
+
+.center{
+    width: 90px;
+    margin-top: 480px;
+}
+.bottom-img{
+    margin-top: 19px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+/*---------------------------- Story ----------------------------------------------*/
+.story{
+    text-align: center;
+    background: url(image/story.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.story h2{
+    font-size: 63px;
+    color: blue;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*---------------------------- Dashboard ----------------------------------------------*/
+.dashboard{
+    text-align: center;
+    background: url(image/p.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dashboard h2{
+    font-size: 63px;
+    color: #fff;
+    text-align: center;
+    bottom: 0px;
+}
+
+/*---------------------------- Visualization ----------------------------------------------*/
+.Visualization{
+    text-align: center;
+    background: url(image/data.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Visualization h2{
+    font-size: 63px;
+    color: blueviolet;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*---------------------------- Report ----------------------------------------------*/
+.report{
+    text-align: center;
+    background: url(image/report.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.report h2{
+    font-size: 63px;
+    color: red;
+    text-align: center;
+    padding-top: 30px;
+}
+.report-img{
+    width: 100%;
+    padding-bottom: 0;
+}
+
+/*---------------------------- Team --------------------------------------------------*/
+
+.team{
+    background: url(image/team.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.team h2{
+    font-size: 63px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    color: #fff;
+}
+.main{
+   display: flex; 
+   padding-top: 7%;
+}
+.profile{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 60%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.profile:hover{
+    border-radius: 10px;
+    height: 280px;
+}
+
+.profile .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+.profile:hover .img{
+    transform: translateY(-60px);
+    position: static;
+
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile:hover img{
+    border-radius: 10px;
+}
+
+.caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile:hover .caption{
+    opacity: 1;
+}
+
+.caption h3{
+    padding-top: 20px;
+    font-size: 13px;
+    
+}
+.caption p{
+    font-size: 17px;
+    color: #0c52a1;
+    margin: 2px 0 6px 0;
+}
+
+.caption .social-link a {
+    color: #333;
+    margin-right: 8px;
+    font-size: 16px;
+    transition: .6s;
+}
+
+.social-link a i:hover{
+    color: #0c52a1;
+}
+
+/*---------------------------- About ----------------------------------------------*/
+.about{
+    text-align: center;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/about.jpg);;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.about h2{
+    font-size: 63px;
+    color: #fff;
+    text-align: center;
+    bottom: 0px;
+}
+
+.about h3{
+    padding-top: 50px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    bottom: 0px;
+}
+.about p{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    bottom: 0px;
+    padding-left: 400px;
+}
+
+.about p i{
+    color: red;
+    padding-right: 15px;
+}
+/*---------------------------- Footer ----------------------------------------------*/
+
+.footer{
+    background: url(image/footer.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.footer-img {
+    width: 100%;
+}
+.footer h3{
+    color: green;
+    text-align: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400%;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.footer p{
+    color: #111;
+    width: 20xp;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    margin-left: 580px;
+    padding-top: 2%;
+}
+
+.footer-nav ul{
+    display: flex;
+    list-style: none;
+}
+.footer-nav ul li{
+    margin: 0 5px;
+}
+.footer-nav ul li a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 1px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.footer-nav ul li a:hover{
+    color: #1b1b1b;
+    background: #fff;
+}
+.footer-nav ul li a i{
+    padding-right: 10px;
+}
+/*---------------------------- media --------------------------------------------------*/
+
+@media (max-width: 940px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav{
+        height: 80px;
+        background: #1b1b1b;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px 0px 50px;
+    }
+    nav .logo{
+        margin-right: 30px;
+        font-size: 22px;
+        color: #fff;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover{
+        color: cyan;
+        background: none;
+    }
+    .team{
+        height: 90vh;
+        width: 100%;
+    }
+    .team h2{
+        font-size: 30px;
+    }
+    .main{
+        display: block;
+        height: 100px;
+        width: 100px;
+    }
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+    .contain{
+        background-position: center;
+        background-size: cover;
+        height: 81vh;
+    }
+    .contain h1{
+        padding-top: 10%;
+        font-size: 25px;
+    }
+    .contain p{
+        font-size: 12px;
+    }
+    .bottom-img{
+        margin-top: 150px;
+        width: 100%;
+    }
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: blue;
+        border: 1px solid purple;
+        padding: 10px 24px;
+        font-size: 10px;
+        background: transparent;
+        cursor: pointer;
+        margin-left: 40%;
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+    .hero-btn:hover{
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 1s;
+    }
+    
+    
+}
