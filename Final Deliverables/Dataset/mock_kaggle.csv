@@ -1,4 +1,4 @@
-data,venda,estoque,preco
+year,Sales,Stock,Price
 2014-01-01,0,4972,1.29
 2014-01-02,70,4902,1.29
 2014-01-03,59,4843,1.29
